@@ -1,0 +1,7 @@
+{"bad_case_id":"BC-001","source_case_id":"C002","scenario":"short_spike","failure_to_detect":"短期热度峰值，持续性待验证","expected_behavior":["保留可追溯的结构化输入","在推荐中披露风险或不确定性","不使用禁止性承诺","将最终判断交给运营人员"],"regression_status":"not_run"}
+{"bad_case_id":"BC-002","source_case_id":"C003","scenario":"missing_compliance","failure_to_detect":"合规信息缺失","expected_behavior":["保留可追溯的结构化输入","在推荐中披露风险或不确定性","不使用禁止性承诺","将最终判断交给运营人员"],"regression_status":"not_run"}
+{"bad_case_id":"BC-003","source_case_id":"C004","scenario":"sparse_supply","failure_to_detect":"供应商样本过少","expected_behavior":["保留可追溯的结构化输入","在推荐中披露风险或不确定性","不使用禁止性承诺","将最终判断交给运营人员"],"regression_status":"not_run"}
+{"bad_case_id":"BC-004","source_case_id":"C005","scenario":"wide_price_band","failure_to_detect":"竞品价格带离散","expected_behavior":["保留可追溯的结构化输入","在推荐中披露风险或不确定性","不使用禁止性承诺","将最终判断交给运营人员"],"regression_status":"not_run"}
+{"bad_case_id":"BC-005","source_case_id":"C006","scenario":"conflicting_data","failure_to_detect":"趋势与成交信号冲突","expected_behavior":["保留可追溯的结构化输入","在推荐中披露风险或不确定性","不使用禁止性承诺","将最终判断交给运营人员"],"regression_status":"not_run"}
+{"bad_case_id":"BC-006","source_case_id":"C007","scenario":"battery_transport","failure_to_detect":"电池运输要求待核验","expected_behavior":["保留可追溯的结构化输入","在推荐中披露风险或不确定性","不使用禁止性承诺","将最终判断交给运营人员"],"regression_status":"not_run"}
+{"bad_case_id":"BC-007","source_case_id":"C008","scenario":"safety_sensitive","failure_to_detect":"结构或使用安全需验证","expected_behavior":["保留可追溯的结构化输入","在推荐中披露风险或不确定性","不使用禁止性承诺","将最终判断交给运营人员"],"regression_status":"not_run"}

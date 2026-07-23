@@ -1,0 +1,64 @@
+{
+  "schema_version": "feishu-mock-v1.0.0",
+  "evidence_level": "synthetic_demo",
+  "integration_status": "not_connected",
+  "space": {
+    "name": "AI 选品雷达",
+    "space_id": null
+  },
+  "assets": [
+    {
+      "asset_id": "FEISHU-MOCK-001",
+      "type": "selection_task",
+      "title": "TASK-20260723-001｜TikTok Shop 美国站潜力品研究",
+      "source_file": "01-选品任务记录.md",
+      "task_id": "TASK-20260723-001",
+      "status": "mock_saved",
+      "document_id": null,
+      "idempotency_key": "demo:TASK-20260723-001:task:v1"
+    },
+    {
+      "asset_id": "FEISHU-MOCK-002",
+      "type": "candidate_list",
+      "title": "2026-07-23｜候选商品清单",
+      "source_file": "02-候选商品清单.md",
+      "task_id": "TASK-20260723-001",
+      "status": "mock_saved",
+      "document_id": null,
+      "idempotency_key": "demo:TASK-20260723-001:candidates:v1"
+    },
+    {
+      "asset_id": "FEISHU-MOCK-003",
+      "type": "product_analysis",
+      "title": "便携化妆刷套装｜单品分析",
+      "source_file": "03-单品分析-便携化妆刷套装.md",
+      "task_id": "TASK-20260723-001",
+      "product_id": "travel-brush-set",
+      "status": "mock_saved",
+      "document_id": null,
+      "idempotency_key": "demo:TASK-20260723-001:travel-brush-set:v1"
+    },
+    {
+      "asset_id": "FEISHU-MOCK-004",
+      "type": "comparison_report",
+      "title": "便携化妆刷套装 vs 宠物蒸汽梳｜选品对比报告",
+      "source_file": "04-选品对比报告.md",
+      "task_id": "TASK-20260723-001",
+      "product_ids": ["travel-brush-set", "pet-groomer"],
+      "status": "mock_saved",
+      "document_id": null,
+      "idempotency_key": "demo:TASK-20260723-001:comparison:v1"
+    },
+    {
+      "asset_id": "FEISHU-MOCK-005",
+      "type": "bad_case",
+      "title": "BC-001｜合规信息缺失导致高增长商品被高估",
+      "source_file": "05-Bad-Case记录.md",
+      "task_id": "TASK-20260723-001",
+      "case_id": "BC-001",
+      "status": "mock_saved",
+      "document_id": null,
+      "idempotency_key": "demo:TASK-20260723-001:BC-001:v1"
+    }
+  ]
+}

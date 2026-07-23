@@ -1,0 +1,196 @@
+export type DimensionKey = "growth" | "virality" | "margin" | "supply" | "logistics" | "compliance";
+
+export type Product = {
+  id: string;
+  name: string;
+  category: string;
+  image: string;
+  referencePriceLow: number;
+  referencePriceHigh: number;
+  salePrice: number;
+  cost: number;
+  shipping: number;
+  weight: number;
+  trend: string;
+  trendValue: number;
+  contentSignal: string;
+  dimensions: Record<DimensionKey, number>;
+  risks: string[];
+  recommendation: string;
+  competitorReference: string;
+  supplyNote: string;
+};
+
+export const dimensionLabels: Record<DimensionKey, string> = {
+  growth: "需求增长",
+  virality: "传播潜力",
+  margin: "利润空间",
+  supply: "供应稳定",
+  logistics: "物流友好",
+  compliance: "合规安全",
+};
+
+export const products: Product[] = [
+  {
+    id: "folding-lamp",
+    name: "折叠式氛围灯",
+    category: "家居收纳",
+    image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=900&q=80",
+    referencePriceLow: 26,
+    referencePriceHigh: 36,
+    salePrice: 31,
+    cost: 8.4,
+    shipping: 5.2,
+    weight: 0.42,
+    trend: "近 30 天持续增长",
+    trendValue: 38,
+    contentSignal: "开合动作清晰，适合前后对比内容",
+    dimensions: { growth: 88, virality: 91, margin: 84, supply: 76, logistics: 78, compliance: 82 },
+    risks: ["需确认电池运输规范", "同质化内容开始增加"],
+    recommendation: "需求和内容表现同时上升，建议优先验证供货稳定性与电池运输要求。",
+    competitorReference: "模拟样本显示主流价格带为 $26–36，头部内容突出折叠收纳与露营场景。",
+    supplyNote: "模拟供应商 12 家，常规起订量 50 件。",
+  },
+  {
+    id: "pet-groomer",
+    name: "宠物蒸汽梳",
+    category: "宠物用品",
+    image: "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=900&q=80",
+    referencePriceLow: 19,
+    referencePriceHigh: 29,
+    salePrice: 24,
+    cost: 6.2,
+    shipping: 4.1,
+    weight: 0.31,
+    trend: "近 14 天快速增长",
+    trendValue: 54,
+    contentSignal: "宠物反应和梳毛效果具备强展示性",
+    dimensions: { growth: 93, virality: 95, margin: 86, supply: 68, logistics: 84, compliance: 72 },
+    risks: ["功能宣称需要谨慎", "部分样本缺少材质说明"],
+    recommendation: "传播潜力突出，但供应信息完整度不足，适合进入样品验证而非直接采购。",
+    competitorReference: "模拟竞品以宠物脱毛效果为主要卖点，价格集中在 $19–29。",
+    supplyNote: "模拟供应商 7 家，材质信息完整度一般。",
+  },
+  {
+    id: "oil-sprayer",
+    name: "定量喷油瓶",
+    category: "厨房小工具",
+    image: "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=900&q=80",
+    referencePriceLow: 14,
+    referencePriceHigh: 22,
+    salePrice: 18,
+    cost: 3.8,
+    shipping: 4.6,
+    weight: 0.47,
+    trend: "平稳增长",
+    trendValue: 22,
+    contentSignal: "喷雾覆盖范围易于演示",
+    dimensions: { growth: 74, virality: 81, margin: 79, supply: 90, logistics: 66, compliance: 88 },
+    risks: ["玻璃版本破损率需验证"],
+    recommendation: "供应成熟、参考利润空间可控，建议优先选择轻量塑料版本降低物流风险。",
+    competitorReference: "模拟竞品集中强调控油和空气炸锅场景，低价竞争较明显。",
+    supplyNote: "模拟供应商 21 家，供货稳定，材质选择较多。",
+  },
+  {
+    id: "travel-brush-set",
+    name: "便携化妆刷套装",
+    category: "美妆工具",
+    image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=900&q=80",
+    referencePriceLow: 14,
+    referencePriceHigh: 24,
+    salePrice: 19,
+    cost: 3.4,
+    shipping: 2.6,
+    weight: 0.18,
+    trend: "季节性回升",
+    trendValue: 31,
+    contentSignal: "收纳展开和上妆过程适合短视频演示",
+    dimensions: { growth: 82, virality: 89, margin: 92, supply: 94, logistics: 96, compliance: 90 },
+    risks: ["刷毛材质需核验", "内容同质化较高"],
+    recommendation: "综合分高且履约简单，适合通过刷毛材质、收纳结构和教程内容做差异化验证。",
+    competitorReference: "模拟样本中价格带为 $14–24，主要差异来自刷毛材质、数量和收纳方式。",
+    supplyNote: "模拟供应商 34 家，起订量低，交期稳定。",
+  },
+  {
+    id: "camping-light",
+    name: "磁吸露营灯",
+    category: "户外配件",
+    image: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=900&q=80",
+    referencePriceLow: 28,
+    referencePriceHigh: 48,
+    salePrice: 38,
+    cost: 11.6,
+    shipping: 6.8,
+    weight: 0.58,
+    trend: "旺季前升温",
+    trendValue: 43,
+    contentSignal: "多场景切换和磁吸安装便于拍摄",
+    dimensions: { growth: 86, virality: 87, margin: 77, supply: 72, logistics: 58, compliance: 64 },
+    risks: ["含电池", "防水等级需核验", "重量影响运费"],
+    recommendation: "市场信号积极，但物流和合规信息需要在样品测试后再判断。",
+    competitorReference: "模拟竞品主打露营、车库和应急照明，价格跨度较大。",
+    supplyNote: "模拟供应商 9 家，防水参数口径不一致。",
+  },
+  {
+    id: "drawer-organizer",
+    name: "可调节抽屉分隔板",
+    category: "家居收纳",
+    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=80",
+    referencePriceLow: 16,
+    referencePriceHigh: 26,
+    salePrice: 21,
+    cost: 5.1,
+    shipping: 5.4,
+    weight: 0.63,
+    trend: "需求稳定",
+    trendValue: 18,
+    contentSignal: "整理前后对比直观，但内容形式成熟",
+    dimensions: { growth: 68, virality: 73, margin: 72, supply: 92, logistics: 61, compliance: 94 },
+    risks: ["体积重影响利润", "创新空间有限"],
+    recommendation: "供应和合规风险低，但增长与物流表现一般，适合谨慎研究。",
+    competitorReference: "模拟竞品已形成稳定价格带，尺寸组合是主要差异。",
+    supplyNote: "模拟供应商 28 家，尺寸和包装方案成熟。",
+  },
+  {
+    id: "pet-chew-toy",
+    name: "宠物耐咬互动玩具",
+    category: "宠物用品",
+    image: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=900&q=80",
+    referencePriceLow: 10,
+    referencePriceHigh: 18,
+    salePrice: 14,
+    cost: 2.5,
+    shipping: 2.7,
+    weight: 0.2,
+    trend: "缓慢增长",
+    trendValue: 16,
+    contentSignal: "宠物互动自然，耐咬测试便于形成内容",
+    dimensions: { growth: 66, virality: 78, margin: 88, supply: 96, logistics: 94, compliance: 79 },
+    risks: ["咬合安全与材质证明需核验"],
+    recommendation: "利润与履约条件良好，但需求增长有限，建议作为稳健型备选。",
+    competitorReference: "模拟竞品价格集中，耐用性、尺寸和材质证明是评价重点。",
+    supplyNote: "模拟供应商 40 家以上，供货充分。",
+  },
+  {
+    id: "vegetable-chopper",
+    name: "手压切菜器",
+    category: "厨房小工具",
+    image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=900&q=80",
+    referencePriceLow: 22,
+    referencePriceHigh: 34,
+    salePrice: 28,
+    cost: 7.6,
+    shipping: 6.1,
+    weight: 0.82,
+    trend: "热度波动",
+    trendValue: 27,
+    contentSignal: "效率对比明显，具备强演示属性",
+    dimensions: { growth: 71, virality: 90, margin: 69, supply: 84, logistics: 49, compliance: 61 },
+    risks: ["刀片安全风险", "体积重较高", "需完善警示说明"],
+    recommendation: "传播潜力高，但物流和安全风险压低综合表现，不建议作为首批验证商品。",
+    competitorReference: "模拟竞品内容成熟，差评集中在刀片耐用性和清洗难度。",
+    supplyNote: "模拟供应商 17 家，配件和包装差异明显。",
+  },
+];
+
+export const categories = ["全部类目", "家居收纳", "厨房小工具", "宠物用品", "美妆工具", "户外配件"];
