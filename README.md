@@ -2,14 +2,15 @@
 
 面向中小跨境卖家的 AI 选品产品作品集。V1 聚焦 TikTok Shop 美国站，帮助运营人员从市场趋势中发现值得继续研究的潜力商品，并把分散的竞品、供应链、物流和合规信息整理成可比较的参考意见。
 
+项目文档：
+https://gcnsobbslnjr.feishu.cn/wiki/space/7665692675992587216?ccm_open_type=lark_wiki_spaceLink&open_tab_from=wiki_home
+
 [在线体验 AI 选品助手](https://azo11.github.io/ai-product-radar/)
 
 > 当前版本：v1.0.0 交互式 Mock Demo。市场数据、用户研究、AI 输出、Dify、Hermes 和飞书流程均为模拟；筛选、排序、六维评分、参数重算、收藏、对比、状态流转和 PDF 生成由前端真实执行。
 
 ![AI 选品雷达工作台](assets/screenshots/overview-desktop.png)
 
-项目文档：
-https://gcnsobbslnjr.feishu.cn/wiki/space/7665692675992587216?ccm_open_type=lark_wiki_spaceLink&open_tab_from=wiki_home
 
 ## 为什么做
 
