@@ -1,6 +1,6 @@
 # AI 智能选品助手
 
-面向中小跨境卖家的 AI 智能选品 Demo。V1 聚焦 TikTok Shop 美国站，帮助运营人员从市场趋势中发现值得继续研究的潜力商品，并把分散的竞品、供应链、物流和合规信息整理成可比较的参考意见。
+AI 智能选品助手通过整合市场趋势、竞品和供应链信息，帮助跨境卖家快速发现值得进一步研究的潜力商品。
 
 项目文档：
 https://gcnsobbslnjr.feishu.cn/wiki/space/7665692675992587216?ccm_open_type=lark_wiki_spaceLink&open_tab_from=wiki_home
