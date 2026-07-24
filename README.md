@@ -8,6 +8,9 @@
 
 ![AI 选品雷达工作台](assets/screenshots/overview-desktop.png)
 
+项目文档：
+https://gcnsobbslnjr.feishu.cn/wiki/space/7665692675992587216?ccm_open_type=lark_wiki_spaceLink&open_tab_from=wiki_home
+
 ## 为什么做
 
 新手卖家和小型运营团队常用热门内容、商品页、竞品工具和供应商页面拼凑选品判断。查商品情况和寻找竞品耗时最长，却有大量候选最终不值得继续研究。V1 将这些低收益的信息整理工作前置自动化，让运营人员把时间用在样品、供应商和合规核验上。
